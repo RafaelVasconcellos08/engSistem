@@ -4,6 +4,7 @@ name: TI222
 on:
     push:
         branches: [main, dev]
+        
     workflow_dispatch:
         inputs:
             enviroment:
@@ -29,4 +30,3 @@ jobs:
                 ls -la
                 echo "exemplo de listar um diretorio"
                 ls - la api || echo "Nao existe o diretorio"
-                
